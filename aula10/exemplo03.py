@@ -1,21 +1,32 @@
-def dobro(a):
-    r = a * 2
-    
-    return r 
 
-def triplo(a):
-    r = a * 3
-    
-    return r 
 
-def quadrado(a):
-    r = a ** 2
+
+import random
+import subprocess
+from auxiliar import dobro, triplo , quadrado
+
+# def dobro(a):
+#     r = a * 2
     
-    return r 
+#     return r 
+
+# def triplo(a):
+#     r = a * 3
+    
+#     return r 
+
+# def quadrado(a):
+#     r = a ** 2
+    
+#     return r 
 
 
   
-numero = float(input("Digite um número: "))
+# numero = float(input("Digite um número: "))
+
+subprocess.run('cls' , shell=True)
+
+numero = random.randint(10,100)
 
 print("""
 [2] - dobro
@@ -25,6 +36,7 @@ print("""
 
 opcao = int(input('informe a opçao: '))
 
+print(f'numero sorteado {numero}')
 
 match opcao:
     case 2:
